@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: 'roboto',sans-serif;
+    color: aliceblue;
+    border: none;
+    outline: none;
+   
+}
+body{
+ min-height: 100vh;
+ position: relative;
+ background: url("bg-img.jpg"),rgba(0,0,0,0.5);
+ background-blend-mode: multiply;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+header{
+    padding-bottom: 20px;
+    display: block;
+}
+.form-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* background: rgba(0, 0, 0, 0.75); */
+    padding: 60px 30px;
+    width: 300px;
+    border-radius: 4px;
+    z-index: 1;
+
+}
+.form-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+.logo{
+    display: inline-block;
+    background-color: aqua;
+    width: 100%;
+}
+img{
+  float: left;
+  padding-top:20px;
+  padding-left: 10px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    
+}
+#sign_in{
+    color: white;
+    background-color: red;
+    height: 35px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+#sign_in:hover{
+    background-color: rgb(200, 181, 181);
+    color:red;
+    transition: 0.7s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.email,.password{
+    padding: 10px 10px;
+    background-color: rgb(99, 97, 97);
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+.email:focus,.password:focus{
+    background-color: rgb(51, 51, 51) ;
+}
+.email:focus::placeholder,.password:focus::placeholder{
+    color: rgb(255, 255, 255) !important;
+   
+   
+}
+
+::placeholder {
+    color: rgb(236, 223, 223);
+    opacity: 0.8; 
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .below{
+    padding-top: 8px;
+    font-family: 'Narnoor', serif;
+  }
+  .remember{
+    float: left;
+    opacity: 0.6;
+  }
+  .help{
+    float: right;
+    opacity: 0.6;
+   
+  }
+  .new_to_Netflix{
+    padding-top: 60px;
+
+  }
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+  }
+  p{
+    
+    font-size: smaller;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.8;
+  }
+  a{
+    color: rgb(50, 50, 206);
+    text-decoration: none;
+  }
